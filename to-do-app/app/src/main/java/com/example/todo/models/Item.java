@@ -1,13 +1,19 @@
 package com.example.todo.models;
 
-public class Item {
-    private String title;
+import java.util.ArrayList;
 
-    public String getTitle() {
-        return title;
+public class Item {
+    private ArrayList<String> itemsList;
+
+    public Item() {
+        itemsList = new ArrayList<>();
     }
 
-    public void setTitle(String name) {
-        this.title = name;
+    public ArrayList<String> getItemsList() {
+        return itemsList;
+    }
+
+    public void addItem(String item) {
+        this.itemsList.add(item);
     }
 }
