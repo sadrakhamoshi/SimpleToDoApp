@@ -29,9 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void AddTask(View view) {
-        if (mTitle_editText.getText().length() > 0) {
-            mItem.addItem(mTitle_editText.getText().toString());
-            mTitle_editText.setText("");
-        }
+        mItem.addItem(mTitle_editText.getText().toString());
+        mTitle_editText.setText("");
     }
 }

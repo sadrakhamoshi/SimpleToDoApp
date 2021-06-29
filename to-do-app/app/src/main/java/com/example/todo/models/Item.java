@@ -14,6 +14,7 @@ public class Item {
     }
 
     public void addItem(String item) {
-        this.itemsList.add(item);
+        if (item.length() > 0)
+            this.itemsList.add(item);
     }
 }
